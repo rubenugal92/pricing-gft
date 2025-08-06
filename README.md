@@ -5,12 +5,13 @@
 <div align="center">
 INTEGRATION TEST
 <pre>
+  
 1)mvn clean install --compile application
 2)mvn test --run integration tests
 </pre>
 
-<pre>
 REAL TEST
+<pre>
   
 1)cd docker
 2)docker-compose up --build
