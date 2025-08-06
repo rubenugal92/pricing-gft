@@ -23,6 +23,10 @@ As a result this is just a technical assessment of a fake project, you will find
 4)Run the application
 </pre>
 
+SWAGGER
 
+<pre>
+http://localhost:8080/swagger-ui/index.html
+</pre>
 
 </div>
