@@ -2,6 +2,11 @@
 
 
 
-<pre> ```     mvn clean install --compile application 
-         mvn test --run integration tests ``` 
+<div align="center">
+
+<pre>
+mvn clean install --compile application
+mvn test --run integration tests
 </pre>
+
+</div>
