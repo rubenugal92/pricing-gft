@@ -2,4 +2,5 @@
 
 
 
-<pre> ```bash mvn clean install --compile application mvn test --run integration tests ``` </pre>
+<pre> ```     mvn clean install --compile application 
+              mvn test --run integration tests ``` </pre>
