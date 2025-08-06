@@ -6,8 +6,8 @@
 INTEGRATION TEST
 <pre>
   
-1)mvn clean install --compile application
-2)mvn test --run integration tests
+1)mvn clean install (compile application)
+2)mvn test (run integration tests)
 </pre>
 
 REAL TEST
