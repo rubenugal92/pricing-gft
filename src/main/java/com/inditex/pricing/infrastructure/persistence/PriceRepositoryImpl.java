@@ -20,13 +20,13 @@ public class PriceRepositoryImpl implements PriceRepository {
 
     @Override
     public Optional<Price> findPrice(Long brandId, Long productId, LocalDateTime date) {
-        Optional<Price> response = priceJpaRepository.findMatchingPrices(brandId, productId, date)
+       return priceJpaRepository.findMatchingPrices(brandId, productId, date)
                 .stream()
                 .findFirst()
                 .map(priceEntityMapper::toDomain);
-        return response;
+
     }
 
-        //A pesar de que la lógica se suela poner en el service, si es por simplemente filtrar la query lo veo bien ponerlo aquí
+        //A pesar de que la lógica se suela poner en el service, si es solo para filtrar la query no lo veo mal ponerlo aquí
         //ya que el findFirst en realidad sería como poner el típico LIMIT 1 en SQL o top1 en jpa. Si fuese algo más complejo si que lo movería al service.
 }

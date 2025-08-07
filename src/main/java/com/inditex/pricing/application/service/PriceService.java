@@ -1,6 +1,7 @@
 package com.inditex.pricing.application.service;
 
-import com.inditex.pricing.application.excepton.PriceNotFoundException;
+
+import com.inditex.pricing.application.exception.PriceNotFoundException;
 import com.inditex.pricing.application.mapper.PriceMapper;
 import com.inditex.pricing.application.usecase.PriceUseCase;
 import com.inditex.pricing.domain.repository.PriceRepository;

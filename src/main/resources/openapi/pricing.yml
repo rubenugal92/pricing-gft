@@ -42,7 +42,7 @@ paths:
         '404':
           description: Price not found
         '400':
-          description: Bad request
+          description: Bad request, missing parameters!
 
 components:
   schemas:
