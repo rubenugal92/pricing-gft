@@ -1,4 +1,4 @@
-package com.inditex.pricing.application.mapper;
+package com.inditex.pricing.infrastructure.mapper;
 
 import com.inditex.pricing.domain.model.Price;
 import com.inditex.pricing.model.PriceResponse;

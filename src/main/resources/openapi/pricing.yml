@@ -41,8 +41,17 @@ paths:
                 $ref: '#/components/schemas/PriceResponse'
         '404':
           description: Price not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
         '400':
           description: Bad request, missing parameters!
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
 
 components:
   schemas:
@@ -64,3 +73,15 @@ components:
         price:
           type: number
           format: double
+
+    ErrorResponse:
+      type: object
+      properties:
+        timestamp:
+          type: string
+          format: date-time
+        status:
+          type: integer
+        message:
+          type: string
+

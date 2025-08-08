@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS prices;
+
 CREATE TABLE prices (
     id BIGINT PRIMARY KEY,
     product_id BIGINT NOT NULL,

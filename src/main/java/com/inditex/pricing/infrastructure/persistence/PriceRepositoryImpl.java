@@ -2,7 +2,7 @@ package com.inditex.pricing.infrastructure.persistence;
 
 import com.inditex.pricing.domain.model.Price;
 import com.inditex.pricing.domain.repository.PriceRepository;
-import com.inditex.pricing.infrastructure.mapper.PriceEntityMapper;
+import com.inditex.pricing.infrastructure.persistence.jpa.mapper.PriceEntityMapper;
 import com.inditex.pricing.infrastructure.persistence.jpa.PriceJpaRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -24,9 +24,5 @@ public class PriceRepositoryImpl implements PriceRepository {
                 .stream()
                 .findFirst()
                 .map(priceEntityMapper::toDomain);
-
     }
-
-        //A pesar de que la lógica se suela poner en el service, si es solo para filtrar la query no lo veo mal ponerlo aquí
-        //ya que el findFirst en realidad sería como poner el típico LIMIT 1 en SQL o top1 en jpa. Si fuese algo más complejo si que lo movería al service.
 }

@@ -1,4 +1,4 @@
-package com.inditex.pricing.infrastructure.mapper;
+package com.inditex.pricing.infrastructure.persistence.jpa.mapper;
 
 import com.inditex.pricing.domain.model.Price;
 import com.inditex.pricing.infrastructure.persistence.entity.PriceEntity;
