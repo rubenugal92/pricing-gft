@@ -26,5 +26,5 @@ public class Price {
 // como por ejemplo decisiones sobre qué precio aplicar en función de la prioridad, pero eso ya lo hace la misma query y si por ejemplo mañana cambias a otra base de datos,
 // seguramente siempre se va a querer delegarlo a la query aunque tengamos un metodo aqui para no depender de si cambiamos o no de base de datos, por lo que sería redundante.
 // En este caso concreto, he optado por mantener el modelo simple, siguiendo el principio de mantener el dominio limpio hasta que
-// emerjan reglas de negocio que realmente justifiquen el tener que poner métodos de dominio. 
+// emerjan reglas de negocio que realmente justifiquen el tener que poner métodos de dominio.
 
