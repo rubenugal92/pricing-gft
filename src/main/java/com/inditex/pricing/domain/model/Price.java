@@ -3,6 +3,7 @@ package com.inditex.pricing.domain.model;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 @Data
 @RequiredArgsConstructor
@@ -13,6 +14,7 @@ public class Price {
     private LocalDateTime endDate;
     private Integer priceList;
     private Integer priority;
-    private Double price;
+    private BigDecimal price;
     private String currency;
+
 }
