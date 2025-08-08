@@ -24,12 +24,6 @@ class GetPriceUseCaseImplTest {
     @InjectMocks
     private GetPriceUseCaseImpl getPriceUseCase;
 
-    @BeforeEach
-    void setup() {
-        repository = mock(PriceRepository.class);
-        getPriceUseCase = new GetPriceUseCaseImpl(repository);
-    }
-
     @Test
     void return_price_when_price_exists_test() {
         Long brandId = 1L;
